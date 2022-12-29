@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --swiper-navigation-size: 30px;
+  @media (max-width: 600px) {
+    --swiper-navigation-size: 25px;
+  }
+}
+
+.loading{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.error{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.header{
+  .header__container{
+    width: 80%;
+    height: 56px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 500px) {
+      width: 95%;
+    }
+    .header__logo{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      gap: 10px;
+      @media (max-width: 370px) {
+        width: 30px;
+        height: 30px;
+      }
+
+    }
+    .header__search{
+      width: 300px;
+      margin-top: 9px;
+      @media (max-width: 670px) {
+        width: 200px;
+      }
+      @media (max-width: 400px) {
+        width: 150px;
+      }
+
+      input{
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 3px 10px;
+        outline: none;
+      }
+    }
+  }
+}
+.card{
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 1rem;
+  margin: 1rem 0;
+  word-wrap: break-word;
+  @media (max-width: 380px) {
+    width: 160px;
+  }
+  i {
+    font-size: 1rem;
+  }
+  .cold {
+    color: #429bb8;
+  }
+  .hot {
+    color: #ff4500;
+  }
+}
+
+.WeatherPage{
+  width: 80%;
+  margin: 0 auto;
+  .title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .card{
+    margin: 30px auto 20px auto;
+  }
+  .carousel{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    flex-wrap: wrap;
+
+  }
+
+}
+.swiper-button-next {
+  &::after{
+    width: 5px;
+    height: 5px;
+  }
+}
